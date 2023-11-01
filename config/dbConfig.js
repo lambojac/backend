@@ -4,7 +4,7 @@ import asyncHandler from 'express-async-handler';
 
 export const mongoDb = asyncHandler(async () => {
   try {
-    const connection = await mongoose.connect(process.env.DB_URL, {
+    const connection = await mongoose.connect('mongodb+srv://kennie:869480Ak@cluster0.zkjbfkp.mongodb.net/noteapi?retryWrites=true&w=majority', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
